@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  frontend:
+    image: ghcr.io/cjw0824/kdt1-study-3-team3-front:latest
+    container_name: kdt1-study-3-team3-front
+    ports:
+      - "80:80"
+    networks:
+      - app
+
+networks:
+  app:
+    driver: bridge
